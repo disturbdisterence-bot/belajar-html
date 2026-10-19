@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Kombinasi, Pseudo-class, & Pseudo-element</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="b1.css">
+</head>
+<body>
+
+    <!-- NAVIGASI (Contoh Descendant & Child Selector) -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main style="padding: 20px;">
+        <!-- JUDUL SECTION (Contoh Pseudo-element ::before & ::after) -->
+        <h2>Judul Section Utama</h2>
+
+        <!-- PARAGRAF ARTIKEL (Contoh Pseudo-element ::first-letter) -->
+        <p class="artikel">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Huruf pertama paragraf ini akan menjadi besar secara otomatis menggunakan CSS pseudo-element.
+        </p>
+
+        <!-- TOMBOL (Contoh Pseudo-class :hover & :active) -->
+        <div style="margin: 20px 0;">
+            <button class="tombol">Tombol Interaktif</button>
+        </div>
+
+        <!-- INPUT (Contoh Pseudo-class :focus) -->
+        <div style="margin: 20px 0;">
+            <input type="text" placeholder="Klik untuk fokus...">
+        </div>
+
+        <!-- LIST (Contoh nth-child 3n+1) -->
+        <h3>Daftar Item (:nth-child)</h3>
+        <ul>
+            <li>Item 1 (Bold karena 3n+1)</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4 (Bold karena 3n+1)</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+
+        <!-- TABEL (Contoh Zebra Striping :nth-child(even/odd)) -->
+        <h3>Tabel Zebra Striping</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Andi</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Budi</td>
+                <td>Bandung</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cici</td>
+                <td>Surabaya</td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+</html>
