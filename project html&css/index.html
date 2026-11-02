@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPL Coffee - Kedai Kopi & Coworking Siswa</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            50: '#fdf8f6',
+                            100: '#f2e6e1',
+                            600: '#8b5a2b',
+                            750: '#5c3a21',
+                            900: '#3d2614',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-coffee-50 text-coffee-900 font-sans antialiased">
+
+    <nav class="bg-coffee-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-mug-hot text-amber-500 text-2xl"></i>
+                <span class="font-bold text-xl tracking-wide">RPL Coffee</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
+                <a href="#menu" class="hover:text-amber-400 transition">Menu Andalan</a>
+                <a href="#coworking" class="hover:text-amber-400 transition">Sewa Ruang</a>
+                <a href="#lokasi" class="hover:text-amber-400 transition">Lokasi</a>
+                <a href="#reservasi" class="hover:text-amber-400 transition">Reservasi</a>
+            </div>
+            <div>
+                <a href="#reservasi" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow">Booking Meja</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="beranda" class="hero-pattern relative text-white py-24 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-pattern"></div>
+        <div class="relative max-w-3xl mx-auto space-y-6">
+            <span class="inline-block bg-amber-500/20 text-amber-400 border border-amber-500/30 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase">
+                ☕ Tempat Ngopi & Belajar Nyaman Khusus Siswa
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                Ruang Kreatif & Ngopi Asik <span class="text-amber-500">Buat Siswa Produktif</span>
+            </h1>
+            <p class="text-lg text-coffee-100 max-w-xl mx-auto">
+                Nikmati racikan kopi nikmat, suasana tenang untuk ngerjain tugas kelompok, diskusi project RPL, atau sekadar santai sepulang sekolah.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="#reservasi" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                    Reservasi Sekarang
+                </a>
+                <a href="#coworking" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3.5 rounded-xl transition">
+                    Lihat Paket Ruang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-coffee-900 mb-3">Menu Kopi Andalan ☕</h2>
+            <p class="text-gray-600">Pilihan kopi terbaik dengan harga khusus pelajar yang ramah di kantong.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-coffee-100 overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-48 bg-coffee-100 flex items-center justify-center text-coffee-600">
+                        <i class="fa-solid fa-mug-saucer text-6xl opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-coffee-900">Kopi Susu</h3>
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">Rp 15.000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Espresso house blend, fresh milk, dan gula aren pilihan dengan manis yang pas.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#reservasi" class="block text-center w-full bg-coffee-50 hover:bg-amber-600 hover:text-white text-coffee-750 font-semibold py-2 rounded-xl border border-coffee-200 transition text-sm">Pesan Menu Ini</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-coffee-100 overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-48 bg-coffee-100 flex items-center justify-center text-coffee-600">
+                        <i class="fa-solid fa-glass-water text-6xl opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-coffee-900">Caramel Code Macchiato</h3>
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">Rp 18.000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Perpaduan espresso, susu segar, dan saus karamel legit yang bikin semangat coding/belajar naik.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#reservasi" class="block text-center w-full bg-coffee-50 hover:bg-amber-600 hover:text-white text-coffee-750 font-semibold py-2 rounded-xl border border-coffee-200 transition text-sm">Pesan Menu Ini</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-coffee-100 overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-48 bg-coffee-100 flex items-center justify-center text-coffee-600">
+                        <i class="fa-solid fa-ice-cream text-6xl opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-coffee-900">Matcha Green Tea Latte</h3>
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-full">Rp 17.000</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Bubuk matcha premium Jepang asli yang creamy, manisnya pas, dan menyegarkan hari.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#reservasi" class="block text-center w-full bg-coffee-50 hover:bg-amber-600 hover:text-white text-coffee-750 font-semibold py-2 rounded-xl border border-coffee-200 transition text-sm">Pesan Menu Ini</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coworking" class="py-20 bg-coffee-100/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-coffee-900 mb-3">Paket Sewa Ruang Diskusi & Belajar 💻</h2>
+                <p class="text-gray-600">Fasilitas lengkap: WiFi Super Ngebut, Colokan di Setiap Meja, AC Dingin, dan Tenang.</p>
+            </div>
+
+            <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-coffee-200">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-coffee-900 text-white text-sm uppercase tracking-wider">
+                            <th class="py-4 px-6 font-semibold">Nama Paket</th>
+                            <th class="py-4 px-6 font-semibold">Fasilitas Utama</th>
+                            <th class="py-4 px-6 font-semibold">Kapasitas</th>
+                            <th class="py-4 px-6 font-semibold">Tarif Pelajar</th>
+                            <th class="py-4 px-6 text-center font-semibold">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-sm">
+                        <tr class="hover:bg-coffee-50 transition">
+                            <td class="py-4 px-6 font-bold text-coffee-900">Meja Reguler (Solo)</td>
+                            <td class="py-4 px-6 text-gray-600">WiFi 100 Mbps, Colokan Listrik, Free Air Mineral</td>
+                            <td class="py-4 px-6 text-gray-600">1 Orang</td>
+                            <td class="py-4 px-6 font-semibold text-amber-700">Rp 5.000 / 2 Jam</td>
+                            <td class="py-4 px-6 text-center">
+                                <a href="#reservasi" class="inline-block bg-coffee-750 hover:bg-coffee-900 text-white px-4 py-1.5 rounded-lg font-medium transition text-xs">Pilih</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-coffee-50 transition">
+                            <td class="py-4 px-6 font-bold text-coffee-900">Ruang Diskusi Kelompok</td>
+                            <td class="py-4 px-6 text-gray-600">Papan Tulis, Meja Besar, WiFi, Colokan, Bebas Tanya Mentor</td>
+                            <td class="py-4 px-6 text-gray-600">4 - 6 Orang</td>
+                            <td class="py-4 px-6 font-semibold text-amber-700">Rp 25.000 / Jam</td>
+                            <td class="py-4 px-6 text-center">
+                                <a href="#reservasi" class="inline-block bg-coffee-750 hover:bg-coffee-900 text-white px-4 py-1.5 rounded-lg font-medium transition text-xs">Pilih</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-coffee-50 transition">
+                            <td class="py-4 px-6 font-bold text-coffee-900">Paket All-Day Belajar</td>
+                            <td class="py-4 px-6 text-gray-600">Akses Seharian, Free 1 Kopi Susu RPL, Free Snack</td>
+                            <td class="py-4 px-6 text-gray-600">1 Orang</td>
+                            <td class="py-4 px-6 font-semibold text-amber-700">Rp 30.000 / Hari</td>
+                            <td class="py-4 px-6 text-center">
+                                <a href="#reservasi" class="inline-block bg-coffee-750 hover:bg-coffee-900 text-white px-4 py-1.5 rounded-lg font-medium transition text-xs">Pilih</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-coffee-900 mb-3">Lokasi Kedai</h2>
+            <p class="text-gray-600">Kunjungi kedai kami sepulang sekolah. Lokasi strategis dekat pusat kota dan sekolah.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-coffee-200 space-y-6">
+                <div>
+                    <h3 class="font-bold text-xl text-coffee-900 mb-2">RPL Coffee & Space</h3>
+                </div>
+                <div class="space-y-3 text-sm text-gray-600">
+                    <p class="flex items-center"><i class="fa-solid fa-clock text-amber-600 w-6"></i> Senin - Sabtu: 13.00 - 21.00 WIB</p>
+                    <p class="flex items-center"><i class="fa-solid fa-calendar-xmark text-amber-600 w-6"></i> Minggu: Libur / Sesuai Event</p>
+                    <p class="flex items-center"><i class="fa-solid fa-phone text-amber-600 w-6"></i> +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="lg:col-span-2 h-96 rounded-2xl overflow-hidden shadow-sm border border-coffee-200">
+                <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6922851249764!2d112.612456!3d-7.966620!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTgnMDAuMCJTIDExMsKwMzYnNDUuMCJF!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservasi" class="py-20 bg-coffee-900 text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight mb-3">Formulir Reservasi Meja & Ruangan 📝</h2>
+                <p class="text-coffee-100">Amankan mejamu sekarang sebelum kehabisan tempat pas jam pulang sekolah!</p>
+            </div>
+
+            <form action="#" method="POST" class="bg-coffee-750 p-8 rounded-2xl shadow-xl space-y-6 border border-coffee-600" onsubmit="event.preventDefault(); alert('Terima kasih! Reservasi Anda telah berhasil dikirim. Kami akan menghubungi WhatsApp Anda.');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2" for="nama">Nama Lengkap</label>
+                        <input class="w-full bg-coffee-900 border border-coffee-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" type="text" id="nama" placeholder="Contoh: Budi Santoso" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2" for="whatsapp">Nomor WhatsApp</label>
+                        <input class="w-full bg-coffee-900 border border-coffee-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" type="tel" id="whatsapp" placeholder="Contoh: 08123456789" required>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2" for="sekolah">Asal Sekolah / Kelas</label>
+                        <input class="w-full bg-coffee-900 border border-coffee-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" type="text" id="sekolah" placeholder="Contoh: SMK Telkom / XI RPL 1" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2" for="paket">Pilih Paket / Meja</label>
+                        <select class="w-full bg-coffee-900 border border-coffee-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" id="paket" required>
+                            <option value="">-- Pilih Layanan --</option>
+                            <option value="reguler">Meja Reguler (Solo - Rp 5.000)</option>
+                            <option value="diskusi">Ruang Diskusi Kelompok (Rp 25.000)</option>
+                            <option value="allday">Paket All-Day Belajar (Rp 30.000)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2" for="tanggal">Tanggal Kunjungan</label>
+                        <input class="w-full bg-coffee-900 border border-coffee-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" type="date" id="tanggal" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2" for="jam">Jam Kedatangan</label>
+                        <input class="w-full bg-coffee-900 border border-coffee-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" type="time" id="jam" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg">
+                    Kirim Reservasi Meja
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-coffee-900 text-coffee-100 py-10 border-t border-coffee-750 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex items-center justify-center space-x-3">
+                <i class="fa-solid fa-mug-hot text-amber-500 text-xl"></i>
+                <span class="font-bold text-lg text-white">RPL Coffee</span>
+            </div>
+            <p class="text-gray-400">Tempat nongkrong favorit anak RPL dan pelajar cerdas lainnya.</p>
+            <p class="text-xs text-gray-500">&copy; 2026 RPL Coffee. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
